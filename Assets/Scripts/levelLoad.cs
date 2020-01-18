@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 public class levelLoad : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    void Awake(){
+        DontDestroyOnLoad(gameObject);
+    }
+    
     void Start()
     {
         Invoke("loadNextLevel", 6f);
