@@ -8,8 +8,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
 
     [Tooltip ("In ms^-1")][SerializeField] float speed = 45f;
-    float xRange = 30f;
-    float yRange = 15f;
+    float xRange = 35f;
+    float yRange = 20f;
 
     float xThrow, yThrow;
 
