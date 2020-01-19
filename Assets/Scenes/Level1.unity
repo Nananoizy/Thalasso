@@ -323,7 +323,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 45
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -460,6 +460,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce60eb8d60a94bd4090509d1ce30150a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 45
+  positionPitchFactor: -1.2
+  controlPitchFactor: -20
+  positionYawFactor: -0.002
+  controlRollFactor: -20
 --- !u!1 &1549505408
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,17 +734,17 @@ PrefabInstance:
     - target: {fileID: 2011307978127561977, guid: d21f93d66b7d50a40814d32bdf5842b2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.1
+      value: -1.8
       objectReference: {fileID: 0}
     - target: {fileID: 2011307978127561977, guid: d21f93d66b7d50a40814d32bdf5842b2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.8
+      value: -9.1
       objectReference: {fileID: 0}
     - target: {fileID: 2011307978127561977, guid: d21f93d66b7d50a40814d32bdf5842b2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.3
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 2011307978127561977, guid: d21f93d66b7d50a40814d32bdf5842b2,
         type: 3}
@@ -780,6 +785,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011307978127561977, guid: d21f93d66b7d50a40814d32bdf5842b2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011307978127561977, guid: d21f93d66b7d50a40814d32bdf5842b2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011307978127561977, guid: d21f93d66b7d50a40814d32bdf5842b2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2016565474735360079, guid: d21f93d66b7d50a40814d32bdf5842b2,
         type: 3}
