@@ -740,12 +740,18 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569952018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 149, y: -4.1, z: 2.3}
+  m_LocalPosition: {x: 149, y: -27.7, z: 8.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1697107458}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1640466179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 658909273043528799, guid: d21f93d66b7d50a40814d32bdf5842b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2015773375003074339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1697107456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,10 +1027,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963194228}
     m_Modifications:
-    - target: {fileID: 1008624438707034787, guid: d21f93d66b7d50a40814d32bdf5842b2,
+    - target: {fileID: -1275691502320324856, guid: d21f93d66b7d50a40814d32bdf5842b2,
         type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
+      propertyPath: deathExplosion
+      value: 
+      objectReference: {fileID: 1640466179}
+    - target: {fileID: 658909273043528799, guid: d21f93d66b7d50a40814d32bdf5842b2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2011307978127561977, guid: d21f93d66b7d50a40814d32bdf5842b2,
         type: 3}
@@ -1085,11 +1096,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerShip
-      objectReference: {fileID: 0}
-    - target: {fileID: 6331565392062275499, guid: d21f93d66b7d50a40814d32bdf5842b2,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d21f93d66b7d50a40814d32bdf5842b2, type: 3}
