@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    [Header("General")]
     [Tooltip ("In ms^-1")][SerializeField] float speed = 45f;
     float xRange = 35f;
     float yRange = 20f;
@@ -19,6 +20,8 @@ public class Player : MonoBehaviour
     [SerializeField] float positionYawFactor = -0.5f;
     [SerializeField] float controlRollFactor = -15f;
 
+    bool isDead = false;
+
     void Start()
     {
         
@@ -27,9 +30,13 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if (!isDead){
+            ProcessTranslation();
+            ProcessRotation();
+        }
+        
     }
+
 
     void ProcessTranslation(){
         // X AXIS
@@ -58,5 +65,9 @@ public class Player : MonoBehaviour
         float roll = xThrow * controlRollFactor;
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    void OnPlayerDeath(){
+        isDead = true;
     }
 }
