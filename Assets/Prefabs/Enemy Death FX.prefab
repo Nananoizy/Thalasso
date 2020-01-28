@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 3822163153681397149}
   - component: {fileID: 5812518930289438513}
   - component: {fileID: 2859153833011736822}
+  - component: {fileID: 1102293346968391502}
   m_Layer: 0
-  m_Name: Explosion (1)
+  m_Name: Enemy Death FX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4850,3 +4851,15 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &1102293346968391502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6712806162382845043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53c8fcc7d825304fac5aa4a48a23244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

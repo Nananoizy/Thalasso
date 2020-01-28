@@ -6,6 +6,8 @@ public class Enemy : MonoBehaviour
 {
 
     Collider collider;
+    [SerializeField] GameObject enemyDeathFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,7 @@ public class Enemy : MonoBehaviour
     }
 
     void OnParticleCollision(GameObject other){
+        Instantiate(enemyDeathFX, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 

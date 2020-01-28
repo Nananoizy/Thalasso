@@ -349,6 +349,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 456a9c754a6d2a945aefcb3772b61c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDeathFX: {fileID: 6712806162382845043, guid: a2fbaa4250731794a9691d649f87f3db,
+    type: 3}
 --- !u!1 &4185842711042114024
 GameObject:
   m_ObjectHideFlags: 0
