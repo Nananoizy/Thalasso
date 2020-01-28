@@ -4806,7 +4806,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 2cbfbbcf3e223344a83f96898c93ddc9, type: 2}
-  - {fileID: 2100000, guid: 32314ba6cfa407640bffbb7b20708949, type: 2}
+  - {fileID: 2100000, guid: 2cbfbbcf3e223344a83f96898c93ddc9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5125,6 +5125,9 @@ MonoBehaviour:
   controlPitchFactor: -20
   positionYawFactor: 1
   controlRollFactor: -20
+  guns:
+  - {fileID: 2015773374349717283}
+  - {fileID: 8682410301673314817}
 --- !u!65 &6331565392062275499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6432,10 +6435,16 @@ PrefabInstance:
     - target: {fileID: 7171816513529548963, guid: 5da78b7fc35b98449a40d5bfa1acf32f,
         type: 3}
       propertyPath: m_Name
-      value: Laser (1)
+      value: Gun Right
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5da78b7fc35b98449a40d5bfa1acf32f, type: 3}
+--- !u!1 &8682410301673314817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7171816513529548963, guid: 5da78b7fc35b98449a40d5bfa1acf32f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2015773373486566050}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8682410301673314816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7171816513529548962, guid: 5da78b7fc35b98449a40d5bfa1acf32f,
@@ -6507,10 +6516,16 @@ PrefabInstance:
     - target: {fileID: 7171816513529548963, guid: 5da78b7fc35b98449a40d5bfa1acf32f,
         type: 3}
       propertyPath: m_Name
-      value: Laser
+      value: Gun Left
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5da78b7fc35b98449a40d5bfa1acf32f, type: 3}
+--- !u!1 &2015773374349717283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7171816513529548963, guid: 5da78b7fc35b98449a40d5bfa1acf32f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8682410302571790208}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2015773374349717282 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7171816513529548962, guid: 5da78b7fc35b98449a40d5bfa1acf32f,

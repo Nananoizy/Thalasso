@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject enemyDeathFX;
     [SerializeField] int pointsPerHit = 12;
 
+    [SerializeField] int hits = 3;
+
     ScoreBoard scoreBoard;
 
     // Start is called before the first frame update
@@ -25,13 +27,24 @@ public class Enemy : MonoBehaviour
     }
 
     void OnParticleCollision(GameObject other){
-        Instantiate(enemyDeathFX, transform.position, Quaternion.identity);
-        scoreBoard.ScoreHit(pointsPerHit);
-        Destroy(gameObject);
+        
+        hits--;
+
+        if (hits <= 0){
+            KillEnemy();
+        }
     }
 
     void AddNonTriggerBoxCollider(){
         collider = gameObject.AddComponent<BoxCollider>();
         collider.isTrigger = false;
+    }
+
+    void KillEnemy(){
+
+        Instantiate(enemyDeathFX, transform.position, Quaternion.identity);
+        scoreBoard.ScoreHit(pointsPerHit);
+        Destroy(gameObject);
+
     }
 }

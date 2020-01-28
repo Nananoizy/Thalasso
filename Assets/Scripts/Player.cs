@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     [SerializeField] float positionYawFactor = -0.5f;
     [SerializeField] float controlRollFactor = -15f;
 
+    [SerializeField] GameObject[] guns;
+
     bool isDead = false;
 
     void Start()
@@ -33,6 +35,7 @@ public class Player : MonoBehaviour
         if (!isDead){
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
         
     }
@@ -67,7 +70,25 @@ public class Player : MonoBehaviour
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
+    void ProcessFiring(){
+
+        if (CrossPlatformInputManager.GetButton("Fire")){
+            ActivateGuns(true);
+        }
+        else{
+            ActivateGuns(false);
+        }
+
+    }
+
     void OnPlayerDeath(){
         isDead = true;
+    }
+
+    void ActivateGuns(bool on){
+
+        foreach (GameObject gun in guns){
+            gun.SetActive(on);
+        }
     }
 }
