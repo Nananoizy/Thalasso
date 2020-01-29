@@ -88,7 +88,8 @@ public class Player : MonoBehaviour
     void ActivateGuns(bool on){
 
         foreach (GameObject gun in guns){
-            gun.SetActive(on);
+            var particleS = gun.GetComponent<ParticleSystem>().emission;
+            particleS.enabled = on;
         }
     }
 }
